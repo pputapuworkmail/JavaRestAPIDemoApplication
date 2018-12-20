@@ -64,6 +64,7 @@ public class StationApplicationController {
 		if(stations.isEmpty()) {
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}else {
+			System.out.println("LIST OF STATIONS "+stations+ "SIZE "+stations.size());
 			return new ResponseEntity<List<Station>>(stations, HttpStatus.OK);
 		}
 		
