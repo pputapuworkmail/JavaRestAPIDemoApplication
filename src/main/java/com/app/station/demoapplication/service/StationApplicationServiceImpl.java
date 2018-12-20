@@ -23,7 +23,7 @@ public class StationApplicationServiceImpl implements StationApplicationService 
 
 	@Override
 	public void deleteStation(String stationId) {
-		stationRepository.deleteById(stationId);
+		stationRepository.delete(stationId);
 
 	}
 

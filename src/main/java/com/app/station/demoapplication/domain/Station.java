@@ -13,12 +13,13 @@ import lombok.ToString;
 public class Station {
 
 	@Id
+	@Column(name="stationid")
 	private String stationId;
-	@Column(name="stationName")
+	@Column(name="stationname")
 	private String stationName;
-	@Column(name="hdEnabled")
+	@Column(name="hdenabled")
 	private boolean hdEnabled;
-	@Column(name="callSign")
+	@Column(name="callsign")
 	private String callSign;
 
 }
