@@ -74,7 +74,7 @@ public class StationApplicationController {
 	public ResponseEntity<Station> searchStationsByName(@RequestParam(required = false) String stationName,
 			@RequestParam(required = false) String stationId) {
 
-		Station station = stationService.searchByStationName(stationName, stationId);
+		Station station = stationService.searchByStationNameOrStationId(stationName, stationId);
 
 		if (station == null) {
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);

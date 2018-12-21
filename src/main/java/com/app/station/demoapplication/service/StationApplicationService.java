@@ -13,10 +13,8 @@ public interface StationApplicationService {
 	Station updateStation(Station station);
 	
 	List<Station> retrieveAllStations();
-	
-	Station searchByStationId(String stationId);
-	
-	Station searchByStationName(String stationName, String stationId);
+		
+	Station searchByStationNameOrStationId(String stationName, String stationId);
 	
 	List<Station> searchByHdEnabled(Boolean hdEnabled);
 }

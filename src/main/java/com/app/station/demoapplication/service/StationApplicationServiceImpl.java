@@ -42,14 +42,7 @@ public class StationApplicationServiceImpl implements StationApplicationService 
 	}
 
 	@Override
-	public Station searchByStationId(String stationId) {
-
-		Station station = stationRepository.findByStationId(stationId);
-		return station;
-	}
-
-	@Override
-	public Station searchByStationName(String stationName, String stationId) {
+	public Station searchByStationNameOrStationId(String stationName, String stationId) {
 
 		Station station = stationRepository.findByStationNameOrStationId(stationName, stationId);
 		return station;
