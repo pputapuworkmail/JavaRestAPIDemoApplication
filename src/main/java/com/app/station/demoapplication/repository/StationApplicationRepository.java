@@ -11,6 +11,8 @@ import com.app.station.demoapplication.domain.Station;
 public interface StationApplicationRepository extends JpaRepository<Station, String> {
 
 	Station findByStationName(String stationName);
+	
+	Station findByStationNameOrStationId(String stationName, String stationId);
 
 	Station findByStationId(String stationId);
 

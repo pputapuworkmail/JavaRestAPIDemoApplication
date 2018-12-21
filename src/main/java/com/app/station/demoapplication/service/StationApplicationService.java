@@ -16,7 +16,7 @@ public interface StationApplicationService {
 	
 	Station searchByStationId(String stationId);
 	
-	Station searchByStationName(String stationName);
+	Station searchByStationName(String stationName, String stationId);
 	
 	List<Station> searchByHdEnabled(Boolean hdEnabled);
 }
