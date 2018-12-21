@@ -1,4 +1,3 @@
-
 insert into station(station_id, station_name, hd_enabled, call_sign) values('100001','Station1', true, 'E1234567');
 insert into station(station_id, station_name, hd_enabled, call_sign) values('100002','Station2', false, 'A1234568');
 insert into station(station_id, station_name, hd_enabled, call_sign) values('10003','Station3', true, 'E128674');
